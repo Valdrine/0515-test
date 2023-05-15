@@ -125,7 +125,15 @@
                 $('.gnb ul').stop().fadeOut()
             }
         )
-                
+        //갤러리
+        $('.item_title h2').click(function(){
+            $('.item_title h2').removeClass('on')
+            $(this).addClass('on')
+
+            $('.tab_item ul').css('display','none')
+            $('.tab_item ul').eq($(this).index()).css('display','block')
+        })
+
     </script>
     
 </body>
