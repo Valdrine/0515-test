@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fff;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+.gnb {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+
+.gnb > li > a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 60px;
+}
+
+.gnb > li:hover > a {
+    color: white;
+    background-color: tomato;
+}
+
+
+
+.gnb li {
+    position: relative;
+}
+
+.gnb ul {
+    position: absolute;
+    background-color: #ddd;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+
+
+.gnb ul li a {
+    display: block;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.gnb ul li:hover a {
+    background-color: tomato;
+    color: white;
+}
+
+
+
+
+
+/* slider */
+
+.slider {
+    height: 300px;
+}
+
+.slide {
+    position: relative;
+    height: 300px;
+}
+
+.slide div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+
+/* contents */
+
+
+.contents {
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    padding: 10px 0;
+    gap: 15px;
+}
+
+.item {
+    flex: 1;
+    
+}
+
+.item_title {
+    display: flex;
+    
+    position: relative;
+    gap: 5px;
+}
+
+.item h2 {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.item h2.on  {
+    background-color: tomato;
+}
+
+.tab_item {
+    position: relative;
+    height: 130px;
+}
+
+.tab_item ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.tab_item ul.notice {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+}
+
+.notice li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px;
+}
+
+.gallery {
+    display: none;
+    height: 130px;
+    gap: 10px;
+}
+
+.gallery li {
+    width: 32%;
+    height: 100%;
+    float: left;
+    margin-right: 2%;
+}
+
+.gallery li:last-child {
+    margin: 0;
+}
+
+.gallery li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner {
+    flex: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.link {
+    flex: 1;
+}
+
+.link ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 15px;
+}
+
+.link ul li a {
+    display: block;
+    height: 85px;
+    background-color: #ddd;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.link ul li a:hover {
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* footer */
+
+.footer {
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sns {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.sns li a {
+    display: block;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+
+.sns a:hover {
+    background-color: black;
+    color: white;
+}
